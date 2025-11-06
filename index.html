@@ -41,11 +41,14 @@
 
 </div>
 <script src="js/blocks.min.js"></script>
+<script src="js/jsblocks.I18n.js"></script>
 <script src="js/app.min.js?v=0.1"></script>
-<script>blocks.domReady(function () {
+<script>
+    blocks.I18n.init({lang:'es'});
+    blocks.domReady(function () {
 
-
-});</script>
+    });
+</script>
 
 <!--div id="google_translate_element"></div>
 <script type="text/javascript">
