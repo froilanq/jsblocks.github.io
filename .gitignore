@@ -1,0 +1,15 @@
+.idea
+vendor/
+composer.phar
+composer.lock
+/uploads/
+/assets/css/.sass-cache/
+*.zip
+*.txt
+*.tmp
+*.map
+*.php~
+*.js~
+*.scss~
+*.css~
+*.txt~

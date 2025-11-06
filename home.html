@@ -1,0 +1,508 @@
+<div id="lead-section" >
+    <div class="container-centered">
+        <div class="section-content"><h1 class="section-title">Better MV-ish Framework</h1>
+            <p>From simple user interfaces to complex single-page applications using faster, server-side rendered
+                and easy to learn framework</p><a href="#learn/introduction-why-jsblocks" class="learn-more-btn">Learn
+                more</a> <a href="#download" class="download-btn">Download</a></div>
+    </div>
+</div>
+<div class="row container-centered brief-info">
+    <div class="col-md-4 article-wrap">
+        <div class="img-wrap"><img width="117" height="154" src="img/articleimg1.png" alt="level up your html"/>
+        </div>
+        <h2 class="article-title">Level UP your HTML</h2>
+        <p>Write code queries in your HTML. No need to learn a new syntax</p>
+        <div class="code-snippet"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+                class="hljs-attribute">data-query</span>=<span class="hljs-value">"val(newTodo)"</span>&gt;</span>
+        </div>
+    </div>
+    <div class="col-md-4 article-wrap">
+        <div class="img-wrap"><img width="246" height="98" src="img/articleimg2.png" alt="two-way data binding"/>
+        </div>
+        <h2 class="article-title">Two-way data binding</h2>
+        <p>Keep your model and view always in sync by using observables</p>
+        <div class="code-snippet"><span class="hljs-keyword">this</span>.newTodo = blocks.observable();</div>
+    </div>
+    <div class="col-md-4 article-wrap">
+        <div class="img-wrap"><img width="211" height="97" src="img/articleimg3.png" alt="data manipulation"/></div>
+        <h2 class="article-title">Work with data</h2>
+        <p>Use built-in utility library for advanced &amp; faster data manipulations</p>
+        <div class="code-snippet two-liner lang-javascript">blocks([<span class="hljs-number">1</span>, <span
+                class="hljs-number">2</span>, <span class="hljs-number">3</span>]).map(<span class="hljs-comment">/* code */</span>)
+            .filter(<span class="hljs-comment">/* code */</span>).each()(<span
+                    class="hljs-comment">/* code */</span>);
+        </div>
+    </div>
+</div>
+<div id="performance" class="perf-chart-section">
+    <div class="container container-holder">
+        <div class="row">
+            <div class="title-wrapper"><h2 class="section-title">Performance</h2>
+                <p>jsblocks is fast but we will not stop here. We have ideas how to make it even faster.<br/>Download
+                    all performance test cases from <a href="#download" >here</a>.
+                </p></div>
+        </div>
+    </div>
+    <div class="chart-blocks container-fluid">
+        <div class="row">
+            <div class="chart-block initial-load col-md-4">
+                <div class="title-chart"><h3>Rendering</h3>
+                    <h2>rendering 1500 rows and 12 columns</h2></div>
+                <div class="row chart-holder">
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-blocks best-result"><h4 class="title-bar">jsblocks</h4>
+                            <div class="time-loading">Fastest<br/>or 700ms</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-react"><h4 class="title-bar">React</h4>
+                            <div class="time-magnitude">35% slower</div>
+                            <div class="time-loading">or 950ms</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-angular"><h4 class="title-bar">Angular</h4>
+                            <div class="time-magnitude">310% slower</div>
+                            <div class="time-loading">or 2200ms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-block syncing-changes col-md-4">
+                <div class="title-chart"><h3>Syncing Changes</h3>
+                    <h2>repopulating table with different data 10 times</h2></div>
+                <div class="row chart-holder">
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-blocks best-result"><h4 class="title-bar">jsblocks</h4>
+                            <div class="time-loading">Fastest<br/>or 1900ms</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-react"><h4 class="title-bar">React</h4>
+                            <div class="time-magnitude">25% slower</div>
+                            <div class="time-loading">or 2400ms</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-angular"></div>
+                        <div class="bar-chart-text"><h4 class="title-bar">Angular</h4>
+                            <div class="time-magnitude">360% slower</div>
+                            <div class="time-loading">or 6800ms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-block working-data col-md-4">
+                <div class="title-chart"><h3>Working with data</h3>
+                    <h2>executing map().filter().reduce()</h2></div>
+                <div class="row chart-holder">
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-blocks best-result"><h4 class="title-bar">jsblocks</h4>
+                            <div class="time-loading">Fastest<br/>or 190k ops/sec</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-underscore"></div>
+                        <div class="bar-chart-text"><h4 class="title-bar">underscore</h4>
+                            <div class="time-magnitude">6x slower</div>
+                            <div class="time-loading">or 32k ops/sec</div>
+                        </div>
+                    </div>
+                    <div class="col-chart col-xs-4">
+                        <div class="bar-chart bar-lodash"></div>
+                        <div class="bar-chart-text"><h4 class="title-bar">lodash</h4>
+                            <div class="time-magnitude">9x slower</div>
+                            <div class="time-loading">or 20k ops/sec</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app-example hello-world-example">
+    <div class="row example-holder container-centered">
+        <div class="col-lg-8"><h2 class="section-title">Hello World</h2>
+            <div role="tabpanel">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="html-1"><pre><code
+                            class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span
+            class="hljs-value">"http://jsblocks.com/jsblocks/blocks.js"</span>&gt;</span><span class="undefined"></span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="css">
+      <span class="hljs-tag">blocks</span><span class="hljs-class">.query</span>(<span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">firstName</span>:<span class="hljs-value"> blocks.<span
+                class="hljs-function">observable</span>(<span class="hljs-string">'John'</span>),
+        lastName: blocks.<span class="hljs-function">observable</span>(<span class="hljs-string">'Doe'</span>)
+      })</span></span>;
+    </span></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    First Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+                                class="hljs-attribute">data-query</span>=<span
+                                class="hljs-value">"val(firstName)"</span>&gt;</span>
+    Last Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+                                class="hljs-attribute">data-query</span>=<span
+                                class="hljs-value">"val(lastName)"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Hello <span class="hljs-expression">{{firstName}}</span> <span
+                                class="hljs-expression">{{lastName}}</span>!<span class="hljs-tag">&lt;/<span
+                                class="hljs-title">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-holder hello-world-result" data-query="with(examples.helloWorld)" ><label
+                    class="form-lbl" for="first-name">First Name</label><input id="first-name"
+                                                                               data-query="val(firstName)"
+                                                                               class="form-fields" 
+                                                                               value="John"/><label class="form-lbl"
+                                                                                                    for="last-name">Last
+                Name</label><input id="last-name" data-query="val(lastName)" class="form-fields" 
+                                   value="Doe"/>
+                <div class="form-box"><h2 data-query="text('Hello ' + firstName + ' ' + lastName + '!')"
+                                          >Hello John Doe!</h2></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app-example animations-example">
+    <div data-query="with(examples.animations)" class="row example-holder container-centered" >
+        <div class="col-lg-8"><h2 class="section-title">Animations</h2>
+            <p class="section-description">This example shows how easy it is to implement CSS3 Transitions.</p>
+            <div>
+                <ul data-query="with(tabs).each(list)" class="tabs-list" >
+                    <li data-query="setClass('active', $this.extension == $parent.active()).click($parent.activate, extension)"
+                        role="presentation" class="nav-item active" ><a class="nav-link"
+                                                                                     aria-controls="home" role="tab"
+                                                                                     data-toggle="tab">index.<span>{{extension}}</span></a>
+                    </li>
+                </ul>
+                <div class="tab-content" data-query="with(tabs)" >
+                    <div data-query="setClass('active', active() == 'html')" class="tab-pane fade in active"
+                         ><pre><code class="lang-javascript"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span
+            class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span
+            class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span
+            class="hljs-value">"http://jsblocks.com/jsblocks/blocks.js"</span>&gt;</span><span class="undefined"></span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span
+            class="hljs-value">"script.js"</span>&gt;</span><span class="undefined"></span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+            class="hljs-attribute">data-query</span>=<span class="hljs-value">"val(filterVal)"</span> <span
+            class="hljs-attribute">placeholder</span>=<span
+            class="hljs-value">"Search for a block name"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span
+            class="hljs-value">"result-box"</span> <span class="hljs-attribute">data-query</span>=<span
+            class="hljs-value">"each(items.view)"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span
+                class="hljs-value">"tile"</span> <span class="hljs-attribute">data-query</span>=<span
+                class="hljs-value">"css('top', Math.floor($index() / 4) * 91).css('left', ($index() % 4) * 91)"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span
+                    class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-<span class="hljs-expression">{{icon}}</span>"</span>&gt;</span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span><span class="hljs-expression">{{title}}</span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+                    </div>
+                    <div data-query="setClass('active', active() == 'js')" class="tab-pane fade in" ><pre><code
+                            class="language-javascript"><span class="hljs-keyword">var</span> items = [
+  { icon: <span class="hljs-string">'cubes'</span>, title: <span class="hljs-string">'blocks'</span> },
+  { icon: <span class="hljs-string">'exchange'</span>, title: <span class="hljs-string">'bindings'</span> },
+  { icon: <span class="hljs-string">'line-chart'</span>, title: <span class="hljs-string">'speed'</span> },
+  { icon: <span class="hljs-string">'database'</span>, title: <span class="hljs-string">'data'</span> },
+  { icon: <span class="hljs-string">'wrench'</span>, title: <span class="hljs-string">'debugging'</span> },
+  { icon: <span class="hljs-string">'server'</span>, title: <span class="hljs-string">'architecture'</span> },
+  { icon: <span class="hljs-string">'cube'</span>, title: <span class="hljs-string">'modular'</span>},
+  { icon: <span class="hljs-string">'cogs'</span>, title: <span class="hljs-string">'extensible'</span> },
+  { icon: <span class="hljs-string">'crosshairs'</span>, title: <span class="hljs-string">'consistent'</span> },
+  { icon: <span class="hljs-string">'lightbulb-o'</span>, title: <span class="hljs-string">'innovative'</span> },
+  { icon: <span class="hljs-string">'terminal'</span>, title: <span class="hljs-string">'clean'</span> },
+  { icon: <span class="hljs-string">'plug'</span>, title: <span class="hljs-string">'feature rich'</span> }
+];
+<span class="hljs-keyword">var</span> filterVal = blocks.observable();
+blocks.query({
+  filter: filterVal,
+  items: blocks.observable(items).extend(<span class="hljs-string">'filter'</span>, <span class="hljs-function"><span
+                                class="hljs-keyword">function</span> (<span
+                                class="hljs-params">value</span>) </span>{
+    <span class="hljs-keyword">return</span> !filterVal() || value.title.indexOf(filterVal().toLowerCase()) != -<span
+                                class="hljs-number">1</span>;
+  })
+});</code></pre>
+                    </div>
+                    <div data-query="setClass('active', active() == 'css')" class="tab-pane fade in" ><pre><code
+                            class="language-css"><span class="hljs-comment">/* CSS Transitions */</span>
+<span class="hljs-comment">/* The built-in classes shown below allow for easy CSS transitions */</span>
+<span class="hljs-class">.tile</span><span class="hljs-class">.b-hide-end</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> <span
+            class="hljs-number">0</span></span></span>;
+}</span>
+<span class="hljs-class">.tile</span><span class="hljs-class">.b-show</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> <span
+            class="hljs-number">0</span></span></span>;
+}</span>
+<span class="hljs-class">.tile</span><span class="hljs-class">.b-show-end</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">opacity</span>:<span class="hljs-value"> <span
+            class="hljs-number">1</span></span></span>;
+}</span>
+
+
+<span class="hljs-comment">/* Other styles */</span>
+<span class="hljs-tag">input</span> <span class="hljs-rules">{ <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span
+                                class="hljs-value"> <span class="hljs-number">16px</span></span></span>;  <span
+                                class="hljs-rule"><span class="hljs-attribute">padding</span>:<span
+                                class="hljs-value"> <span class="hljs-number">12px</span> <span class="hljs-number">16px</span></span></span>; <span
+                                class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span
+                                class="hljs-value"> <span class="hljs-number">40px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span
+            class="hljs-number">326px</span></span></span>;  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span
+                                    class="hljs-value"> <span
+                                    class="hljs-hexcolor">#ddf4e8</span></span></span>;  <span
+                                    class="hljs-rule"><span class="hljs-attribute">border</span>:<span
+                                    class="hljs-value"> <span class="hljs-number">1px</span> solid <span
+                                    class="hljs-hexcolor">#54b07e</span></span></span>;}</span>
+<span class="hljs-class">.result-box</span> <span class="hljs-rules">{  <span class="hljs-rule"><span
+                                class="hljs-attribute">position</span>:<span
+                                class="hljs-value"> relative</span></span>;  <span class="hljs-rule"><span
+                                class="hljs-attribute">text-align</span>:<span
+                                class="hljs-value"> center</span></span>;  }</span>
+<span class="hljs-class">.tile</span> <span class="hljs-rules">{  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span
+                                class="hljs-value"> absolute</span></span>;  <span class="hljs-rule"><span
+                                class="hljs-attribute">width</span>:<span class="hljs-value"> <span
+                                class="hljs-number">86px</span></span></span>; <span class="hljs-rule"><span
+                                class="hljs-attribute">background-color</span>:<span class="hljs-value"> <span
+                                class="hljs-hexcolor">#3ebee3</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span
+            class="hljs-number">86px</span></span></span>; <span class="hljs-rule"><span
+                                    class="hljs-attribute">color</span>:<span class="hljs-value"> <span
+                                    class="hljs-hexcolor">#fff</span></span></span>;  <span class="hljs-rule"><span
+                                    class="hljs-attribute">transition</span>:<span class="hljs-value"> <span
+                                    class="hljs-number">1s</span> linear all</span></span>;  }</span>
+<span class="hljs-class">.tile</span> <span class="hljs-class">.fa</span> <span class="hljs-rules">{  <span
+                                class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span
+                                class="hljs-value"> <span class="hljs-number">20px</span></span></span>;  <span
+                                class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span
+                                class="hljs-value"> <span class="hljs-number">24px</span></span></span>;  }</span>
+<span class="hljs-class">.tile</span> <span class="hljs-tag">h4</span> <span class="hljs-rules">{  <span
+                                class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span
+                                class="hljs-value"> <span class="hljs-number">14px</span></span></span>;  <span
+                                class="hljs-rule"><span class="hljs-attribute">margin</span>:<span
+                                class="hljs-value"> <span class="hljs-number">15px</span> <span class="hljs-number">0</span></span></span>;  }</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-holder"><input data-query="val(filterValue)" class="form-fields"
+                                            placeholder="Search for block name" /></div>
+            <div class="form-box">
+                <div data-query="each(items.view)" class="animations-box animate" >
+                    <div class="tile"
+                         data-query="css('top', Math.floor($index() / $parent.columns) * 105).css('left', ($index() % $parent.columns) * 91.5)"
+                          style="top:0px;left:0px;"><span class="fa fa-{{icon}}"></span><h4>{{title}}</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app-example simple-app-example">
+    <div data-query="with(examples.application)" class="row example-holder container-centered" >
+        <div class="col-lg-8"><h2 class="section-title">Simple Application</h2>
+            <p class="section-description">This example is built using the MVC architecture that jsblocks offers.
+                This powerful module lets you build complex applications. However, if you don't need this
+                functionality you could always remove it to reduce file size.</p>
+            <div>
+                <ul data-query="with(tabs).each(list)" class="tabs-list" role="tablist" >
+                    <li data-query="setClass('active', $this.extension == $parent.active()).click($parent.activate, extension)"
+                        role="presentation" class="nav-item active" ><a class="nav-link"
+                                                                                     aria-controls="home" role="tab"
+                                                                                     data-toggle="tab">index.<span>{{extension}}</span></a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" data-query="with(tabs)" >
+                    <div data-query="setClass('active', active() == 'html')" class="tab-pane fade in active"
+                         ><pre><code class="lang-javascript"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span
+          class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span
+          class="hljs-value">"http://jsblocks.com/jsblocks/blocks.js"</span>&gt;</span><span
+                                class="undefined"></span><span class="hljs-tag">&lt;/<span
+                                class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span
+          class="hljs-value">"script.js"</span>&gt;</span><span class="undefined"></span><span
+                                class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span
+          class="hljs-value">"products"</span> <span class="hljs-attribute">data-query</span>=<span class="hljs-value">"view(Products)"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+            class="hljs-attribute">data-query</span>=<span
+            class="hljs-value">"val(newProduct.name).keydown(keydown)"</span> <span
+            class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Add new value and press enter"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-query</span>=<span
+            class="hljs-value">"each(products)"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span
+              class="hljs-value">"result-wrap"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span
+                class="hljs-attribute">data-query</span>=<span class="hljs-value">"visible(!editing())"</span> <span
+                class="hljs-attribute">class</span>=<span class="hljs-value">"value-holder"</span>&gt;</span>
+          <span class="hljs-expression">{{name}}</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span
+                class="hljs-attribute">data-query</span>=<span class="hljs-value">"visible(editing)"</span> <span
+                class="hljs-attribute">class</span>=<span class="hljs-value">"value-holder"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span
+                  class="hljs-attribute">data-query</span>=<span class="hljs-value">"val(name)"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span
+                class="hljs-value">"buttons-holder"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span
+                    class="hljs-attribute">data-query</span>=<span
+                    class="hljs-value">"click(toggleEdit)"</span>&gt;</span>
+              <span class="hljs-expression">{{editing() ? 'Update' : 'Edit'}}</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span
+                    class="hljs-attribute">data-query</span>=<span class="hljs-value">"click(remove)"</span> <span
+                    class="hljs-attribute">class</span>=<span
+                    class="hljs-value">"btn-delete"</span>&gt;</span>Delete<span class="hljs-tag">&lt;/<span
+                                class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+                    </div>
+                    <div data-query="setClass('active', active() == 'js')" class="tab-pane fade in" ><pre><code
+                            class="language-javascript"><span class="hljs-keyword">var</span> App = blocks.Application();
+
+<span class="hljs-keyword">var</span> Product = App.Model({
+  name: App.Property(),
+
+  editing: blocks.observable(<span class="hljs-literal">false</span>),
+
+  toggleEdit: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.editing(!<span class="hljs-keyword">this</span>.editing());
+  },
+
+  remove: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span
+                                class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.destroy(<span class="hljs-literal">true</span>);
+  }
+});
+
+<span class="hljs-keyword">var</span> Products = App.Collection(Product);
+
+App.View(<span class="hljs-string">'Products'</span>, {
+  newProduct: Product(),
+
+  products: Products([{ name: <span class="hljs-string">'HTML'</span> }, { name: <span class="hljs-string">'CSS'</span> }, { name: <span
+                                class="hljs-string">'JavaScript'</span> }]),
+
+  keydown: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    <span class="hljs-keyword">if</span> (e.which == <span class="hljs-number">13</span>) {
+      <span class="hljs-keyword">this</span>.products.add(<span class="hljs-keyword">this</span>.newProduct);
+      <span class="hljs-keyword">this</span>.newProduct.reset();
+    }
+  }
+});</code></pre>
+                    </div>
+                    <div data-query="setClass('active', active() == 'css')" class="tab-pane fade in" ><pre><code
+                            class="language-css"><span class="hljs-id">#products</span> &gt; <span class="hljs-tag">input</span> <span
+                            class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span
+            class="hljs-number">16px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span
+            class="hljs-number">12px</span> <span class="hljs-number">16px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span
+            class="hljs-number">326px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span
+            class="hljs-hexcolor">#ddf4e8</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span
+            class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#54b07e</span></span></span>;
+}</span>
+<span class="hljs-class">.result-wrap</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span
+            class="hljs-number">10px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span
+            class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#dcdcdc</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span
+            class="hljs-hexcolor">#fbfbfb</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span
+            class="hljs-number">360px</span></span></span>;
+}</span>
+<span class="hljs-class">.result-wrap</span> <span class="hljs-class">.buttons-holder</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span
+            class="hljs-value"> table-cell</span></span>;
+}</span>
+<span class="hljs-class">.buttons-holder</span> &gt; <span class="hljs-tag">span</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">cursor</span>:<span class="hljs-value"> pointer</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span
+            class="hljs-number">10px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span
+            class="hljs-hexcolor">#2d8dc4</span></span></span>;
+}</span>
+<span class="hljs-class">.buttons-holder</span> <span class="hljs-class">.btn-delete</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span
+            class="hljs-hexcolor">#e65f5f</span></span></span>;
+}</span>
+<span class="hljs-class">.result-wrap</span> <span class="hljs-class">.value-holder</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span
+            class="hljs-value"> table-cell</span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">border-right</span>:<span class="hljs-value"> <span
+            class="hljs-number">1px</span> solid  <span class="hljs-hexcolor">#dcdcdc</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span
+            class="hljs-number">220px</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span
+            class="hljs-number">10px</span></span></span>;
+}</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-holder"><input data-query="val(newProduct.name).keydown(keydown)"
+                                            placeholder="Add new value and press enter" id="value-2"
+                                            class="form-fields" />
+                <div data-query="each(products)" class="form-box" >
+                    <div class="result-wrap" >
+                        <span data-query="visible(!editing())"
+                                                                 class="value-holder" >{{name}}</span>
+                        <span data-query="visible(editing)" class="value-holder value-editing" 
+                              style="display:none;"><input data-query="val(name)" 
+                                                           value="HTML"/></span> <span class="buttons-holder"><span
+                                data-query="click(toggleEdit).setClass('fa-check', editing).setClass('fa-pencil', !editing())"
+                                class="fa fa-pencil" ></span> <span class="fa fa-trash"
+                                                                                 data-query="click(del)"
+                                                                                 ></span></span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

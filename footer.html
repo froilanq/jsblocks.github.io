@@ -1,0 +1,22 @@
+<footer id="footer"
+        data-query="with($root).setClass('view-loading', Home.loading() || Learn.loading() || API.loading() || Download.loading())"
+         class>
+    <div class="container-centered clearfix">
+        <ul class="nav-menu">
+            <li data-query="setClass('nav-item-active', Learn.isActive)"  class><a href="#learn"
+                                                                                                class="nav-link">Learn</a>
+            </li>
+            <li data-query="setClass('nav-item-active', API.isActive)"  class><a href="#api"
+                                                                                              class="nav-link nav-link-active">API</a>
+            </li>
+            <li data-query="setClass('nav-item-active', Download.isActive)"  class><a href="#download"
+                                                                                                   class="nav-link">Download</a>
+            </li>
+            <li><a href="https://github.com/astoilkov/jsblocks" class="follow-link">View on GitHub</a></li>
+        </ul>
+        <div class="logo"><h2><a href="index.html" title="jsblocks"><img src="img/footerlogo.png"
+                                                                         alt="jsblocks"/></a></h2>
+            <div class="licensed-holder"><p>Code licensed under the MIT License<br/></p></div>
+        </div>
+    </div>
+</footer>
